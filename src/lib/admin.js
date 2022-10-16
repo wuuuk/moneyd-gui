@@ -1,6 +1,6 @@
 const fetch = require('node-fetch')
-const ADMIN_API_PORT = process.env.ADMIN_API_PORT || 7769
-const ADMIN_URI = process.env.ADMIN_URI || 'http://localhost:' + ADMIN_API_PORT
+const ADMIN_API_PORT = process.env.MONEYD_ADMIN_BIND_PORT || 7769
+const ADMIN_URI = process.env.MONEYD_ADMIN_URL || 'http://localhost:' + ADMIN_API_PORT
 const ADMIN_COMMANDS = {
   status: true,
   routing: true,
